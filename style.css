@@ -22,6 +22,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 h1 {
@@ -31,9 +32,13 @@ h1 {
 
 h3 {
   padding-top: 1rem;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Flamenco", cursive;
   border-bottom: 2px solid #99858B;
+}
+
+p, li {
+  padding-top: 0.8rem;
 }
 /* Main Page */
 .about-me,
@@ -49,16 +54,17 @@ h3 {
 
 .about-me__section,
 .my-goals__section {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 1.4rem;
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 3.5rem;
   background-color: #FFEFD4;
   margin: 3rem;
-  width: 33%;
+  width: 40%;
   padding: 3rem;
   border: 1.5px solid #33222B;
 }
@@ -68,6 +74,34 @@ h3 {
   padding-top: 1.5rem;
   list-style-type: none;
   text-align: center;
+}
+
+.about-me__img {
+  width: 300px;
+  border-radius: 3rem;
+  padding: 1rem;
+}
+
+.img-wrap {
+  display: flex;
+  align-items: center;
+  margin: 3rem;
+}
+
+.about-me__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.4rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  background-color: #FFEFD4;
+  margin: 18rem 13rem;
+  width: 26%;
+  height: 10vh;
+  padding: 3rem;
+  border: 1.5px solid #33222B;
 }
 
 a {
@@ -109,6 +143,27 @@ footer {
 }
 
 /* Goals Page */
+.home-btn {
+  color: #FFFFFF;
+  position: absolute;
+  font-size: 5rem;
+  top: 15px;
+  left: 30px;
+}
+
+.home-btn:hover {
+  color: #E68005;
+}
+
+.fa-home {
+  padding-right: .5rem;
+}
+
+.fa-caret-left {
+  padding-right: .5rem;
+  font-size: 3rem;
+}
+
 span {
   display: block;
   text-align: center;
@@ -121,10 +176,10 @@ span {
 }
 
 .my-goals__img {
-  width: 9%;
+  width: 19%;
   position: absolute;
-  bottom: 107px;
-  left: 67px;
+  bottom: 126px;
+  left: -10px;
 }
 
 .my-goals__button {
